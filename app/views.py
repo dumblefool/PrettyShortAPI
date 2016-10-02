@@ -6,4 +6,4 @@ import PrettyShort
 @app.route('/index')
 def index():
         output=PrettyShort.prest()
-        return jsonify(output)
+        return jsonify(**output)
